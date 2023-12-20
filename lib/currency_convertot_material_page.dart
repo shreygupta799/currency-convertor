@@ -50,13 +50,14 @@ class _currencyConvertState extends State {
               style: const TextStyle(
                   color: Colors.black), //ctrl+shift+R=to open refactor
               decoration: InputDecoration(
-                hintText: 'Enter the money in Dollar here',
-                hintStyle: const TextStyle(color: Color.fromARGB(64, 0, 0, 0)),
-                filled: true,
-                fillColor: Colors.white,
-                enabledBorder: border,
-                focusedBorder: border,
-              ),
+                  hintText: 'Enter the money in Dollar here',
+                  hintStyle:
+                      const TextStyle(color: Color.fromARGB(64, 0, 0, 0)),
+                  filled: true,
+                  fillColor: Colors.white,
+                  enabledBorder: border,
+                  focusedBorder: border,
+                  prefixIcon: const Icon(Icons.attach_money)),
               keyboardType: TextInputType.number,
             ),
             Padding(
@@ -69,7 +70,7 @@ class _currencyConvertState extends State {
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(10.0))),
                   child: const Text(
-                    "Click Me",
+                    "Convert",
                     style: TextStyle(color: Colors.white),
                   )),
             ),
@@ -79,64 +80,3 @@ class _currencyConvertState extends State {
     );
   }
 }
-
-// class CurrencyConvertorMaterialPagee extends StatelessWidget {
-//   const CurrencyConvertorMaterialPage({super.key});
-
-//   @override
-//   Widget build(BuildContext context) {
-//     const border = OutlineInputBorder(
-//         borderSide: BorderSide(
-//             color: Colors.black,
-//             width: 2.0,
-//             strokeAlign: BorderSide.strokeAlignCenter),
-//         borderRadius: BorderRadius.horizontal(
-//           left: Radius.circular(50),
-//         ));
-//     return Scaffold(
-//       body: Center(
-//         child: Column(
-//           mainAxisAlignment: MainAxisAlignment.center,
-//           children: [
-//             const Text(
-//               '0',
-//               style: TextStyle(
-//                   fontStyle: FontStyle.italic,
-//                   fontSize: 55,
-//                   color: Color.fromARGB(255, 0, 240, 200)),
-//             ),
-//             const TextField(
-//               style:
-//                   TextStyle(color: Colors.lime), //ctrl+shift+R=to open refactor
-//               decoration: InputDecoration(
-//                 hintText: 'Enter the money in Dollar here',
-//                 hintStyle: TextStyle(color: Colors.black),
-//                 filled: true,
-//                 fillColor: Colors.white,
-//                 enabledBorder: border,
-//                 focusedBorder: border,
-//               ),
-//               keyboardType: TextInputType.number,
-//             ),
-//             Padding(
-//               padding: const EdgeInsets.all(8.0),
-//               child: TextButton(
-//                   onPressed: () {
-//                     print("CLicked");
-//                   },
-//                   style: TextButton.styleFrom(
-//                       fixedSize: const Size(300, 50),
-//                       backgroundColor: Colors.black,
-//                       shape: RoundedRectangleBorder(
-//                           borderRadius: BorderRadius.circular(10.0))),
-//                   child: const Text(
-//                     "Click Me",
-//                     style: TextStyle(color: Colors.white),
-//                   )),
-//             ),
-//           ],
-//         ),
-//       ),
-//     );
-//   }
-// }
